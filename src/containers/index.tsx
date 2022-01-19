@@ -3,7 +3,7 @@ import { useSelector } from '@src/stores';
 import React from 'react';
 import colorOpacity from '@src/utils/color-opacity';
 import theme from '@src/utils/theme';
-import RootNavigator from '@src/pages';
+import RootNavigator from '@src/screens';
 
 const AppRoot: React.FC = () => {
   const { loading } = useSelector((state) => state.appNotification);
