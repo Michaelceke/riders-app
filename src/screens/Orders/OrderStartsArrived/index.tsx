@@ -41,7 +41,7 @@ const OrderStartsArrived: React.FC<OrderStartsArrivedProps> = ({ item }) => {
           height="56px"
           mt="60px"
           bg="col.500"
-          _text={{color:'col.white',fontWeight:'semibold', fontSize:'lg'}}
+          _text={{ color: "col.white", fontWeight: "semibold", fontSize: "lg" }}
         >
           I Have Arrived
         </Button>

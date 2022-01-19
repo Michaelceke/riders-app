@@ -1,18 +1,18 @@
-import { create } from 'apisauce';
+import { create } from "apisauce";
 
 const api = create({
-  baseURL: 'app/base/url/goes/here',
+  baseURL: "app/base/url/goes/here",
   headers: {
-    'Content-Type': 'application/json',
-    Accept: 'application/json',
+    "Content-Type": "application/json",
+    Accept: "application/json",
   },
 });
 
 const quotesApi = create({
-  baseURL: 'https://quotes.rest',
+  baseURL: "https://quotes.rest",
   headers: {
-    'Content-Type': 'application/json',
-    Accept: 'application/json',
+    "Content-Type": "application/json",
+    Accept: "application/json",
   },
 });
 

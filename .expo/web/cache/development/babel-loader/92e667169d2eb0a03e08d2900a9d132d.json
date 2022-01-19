@@ -1,1 +1,15 @@
-{"ast":null,"code":"Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.quotesApi = exports.api = void 0;\n\nvar _apisauce = require(\"apisauce\");\n\nvar api = (0, _apisauce.create)({\n  baseURL: 'app/base/url/goes/here',\n  headers: {\n    'Content-Type': 'application/json',\n    Accept: 'application/json'\n  }\n});\nexports.api = api;\nvar quotesApi = (0, _apisauce.create)({\n  baseURL: 'https://quotes.rest',\n  headers: {\n    'Content-Type': 'application/json',\n    Accept: 'application/json'\n  }\n});\nexports.quotesApi = quotesApi;","map":{"version":3,"sources":["C:/Users/a/projects/riders-app/src/services/index.ts"],"names":["api","baseURL","headers","Accept","quotesApi"],"mappings":";;;;;AAAA;;AAEA,IAAMA,GAAG,GAAG,sBAAO;AACjBC,EAAAA,OAAO,EAAE,wBADQ;AAEjBC,EAAAA,OAAO,EAAE;AACP,oBAAgB,kBADT;AAEPC,IAAAA,MAAM,EAAE;AAFD;AAFQ,CAAP,CAAZ;;AAQA,IAAMC,SAAS,GAAG,sBAAO;AACvBH,EAAAA,OAAO,EAAE,qBADc;AAEvBC,EAAAA,OAAO,EAAE;AACP,oBAAgB,kBADT;AAEPC,IAAAA,MAAM,EAAE;AAFD;AAFc,CAAP,CAAlB","sourcesContent":["import { create } from 'apisauce';\r\n\r\nconst api = create({\r\n  baseURL: 'app/base/url/goes/here',\r\n  headers: {\r\n    'Content-Type': 'application/json',\r\n    Accept: 'application/json',\r\n  },\r\n});\r\n\r\nconst quotesApi = create({\r\n  baseURL: 'https://quotes.rest',\r\n  headers: {\r\n    'Content-Type': 'application/json',\r\n    Accept: 'application/json',\r\n  },\r\n});\r\n\r\nexport { api, quotesApi };\r\n"]},"metadata":{},"sourceType":"script"}
+{
+  "ast": null,
+  "code": "Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.quotesApi = exports.api = void 0;\n\nvar _apisauce = require(\"apisauce\");\n\nvar api = (0, _apisauce.create)({\n  baseURL: 'app/base/url/goes/here',\n  headers: {\n    'Content-Type': 'application/json',\n    Accept: 'application/json'\n  }\n});\nexports.api = api;\nvar quotesApi = (0, _apisauce.create)({\n  baseURL: 'https://quotes.rest',\n  headers: {\n    'Content-Type': 'application/json',\n    Accept: 'application/json'\n  }\n});\nexports.quotesApi = quotesApi;",
+  "map": {
+    "version": 3,
+    "sources": ["C:/Users/a/projects/riders-app/src/services/index.ts"],
+    "names": ["api", "baseURL", "headers", "Accept", "quotesApi"],
+    "mappings": ";;;;;AAAA;;AAEA,IAAMA,GAAG,GAAG,sBAAO;AACjBC,EAAAA,OAAO,EAAE,wBADQ;AAEjBC,EAAAA,OAAO,EAAE;AACP,oBAAgB,kBADT;AAEPC,IAAAA,MAAM,EAAE;AAFD;AAFQ,CAAP,CAAZ;;AAQA,IAAMC,SAAS,GAAG,sBAAO;AACvBH,EAAAA,OAAO,EAAE,qBADc;AAEvBC,EAAAA,OAAO,EAAE;AACP,oBAAgB,kBADT;AAEPC,IAAAA,MAAM,EAAE;AAFD;AAFc,CAAP,CAAlB",
+    "sourcesContent": [
+      "import { create } from 'apisauce';\r\n\r\nconst api = create({\r\n  baseURL: 'app/base/url/goes/here',\r\n  headers: {\r\n    'Content-Type': 'application/json',\r\n    Accept: 'application/json',\r\n  },\r\n});\r\n\r\nconst quotesApi = create({\r\n  baseURL: 'https://quotes.rest',\r\n  headers: {\r\n    'Content-Type': 'application/json',\r\n    Accept: 'application/json',\r\n  },\r\n});\r\n\r\nexport { api, quotesApi };\r\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "script"
+}

@@ -52,7 +52,7 @@ const OrderDetail: React.FC<OrderDetailProps> = ({ item }) => {
           {isDelivered ? "Arrived" : "In Progress"}
         </Badge>
       </HStack>
-      <VStack space={6} mt='8'>
+      <VStack space={6} mt="8">
         <Box
           _text={{
             fontSize: "md",
@@ -91,7 +91,10 @@ const OrderDetail: React.FC<OrderDetailProps> = ({ item }) => {
             </Text>
             <HStack mt={2}>
               <Icon />
-              <Link href="https://nativebase.io" _text={{ fontSize: "15px", color: "col.500" }}>
+              <Link
+                href="https://nativebase.io"
+                _text={{ fontSize: "15px", color: "col.500" }}
+              >
                 View on map
               </Link>
             </HStack>

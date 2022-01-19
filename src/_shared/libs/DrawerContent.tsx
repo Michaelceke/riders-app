@@ -17,7 +17,7 @@ import {
   DrawerItem,
   DrawerItemList,
 } from "@react-navigation/drawer";
-import { SvgXml } from 'react-native-svg';
+import { SvgXml } from "react-native-svg";
 import { OrdersBag } from "@src/../assets/IconComponents/OrdersBag";
 import { Bicycle } from "@src/../assets/IconComponents/Bicycle";
 import { Profile } from "@src/../assets/IconComponents/Profile";
@@ -42,7 +42,6 @@ const DrawerContent = (props) => {
               <HStack space={4}>
                 <HStack>
                   <Box w="10px">
-                   
                     {focused && (
                       <Divider
                         bg={"#FF1B03"}
@@ -52,7 +51,6 @@ const DrawerContent = (props) => {
                         borderRadius="3px"
                         mr="6px"
                       />
-                      
                     )}
                   </Box>
                   <OrdersBag fill={textAndIconColor} />

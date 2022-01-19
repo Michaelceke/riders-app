@@ -20,10 +20,9 @@ import Login from "./AuthScreens/Login";
 import SignUp from "./AuthScreens/SignUp";
 import Verification from "./AuthScreens/Verification";
 import OrderDetail from "@src/_shared/libs/OrderDetail";
-import OrderStartsArrived from "./Orders/OrderStartsArrived"
-import OrderDelivered from "./Orders/OrderDelivered"
-import MapScreen from './MapScreens'
-
+import OrderStartsArrived from "./Orders/OrderStartsArrived";
+import OrderDelivered from "./Orders/OrderDelivered";
+import MapScreen from "./MapScreens";
 
 // Define the config
 const config = {
@@ -64,7 +63,7 @@ export default function Home() {
       {/* <OrderDetail item={{}}/> */}
       {/* <OrderStartsArrived item={{}}/> */}
       {/* <OrderDelivered item={{}}/> */}
-      <MapScreen/>
+      <MapScreen />
     </>
   );
 }

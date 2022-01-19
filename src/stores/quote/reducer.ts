@@ -1,15 +1,15 @@
-import { Reducer } from 'redux';
-import { QuoteState, QuoteActions, QuoteActionTypes } from './types';
+import { Reducer } from "redux";
+import { QuoteState, QuoteActions, QuoteActionTypes } from "./types";
 
 const initialState: QuoteState = {
-  author: 'Kanye West',
+  author: "Kanye West",
   quote: "I'd like to meet with Tim Cook.I got some ideas",
-  title: 'A quote from Kanye',
+  title: "A quote from Kanye",
 };
 
 const quoteReducer: Reducer<QuoteState, QuoteActions> = (
   state = initialState,
-  action,
+  action
 ) => {
   switch (action.type) {
     case QuoteActionTypes.FETCH_QUOTES_SUCCESS: {

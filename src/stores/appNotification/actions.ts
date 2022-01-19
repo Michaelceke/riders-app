@@ -1,5 +1,5 @@
-import { action } from 'typesafe-actions';
-import { AppNotificationActionTypes } from './types';
+import { action } from "typesafe-actions";
+import { AppNotificationActionTypes } from "./types";
 
 export const alertError = (error: string) => {
   return action(AppNotificationActionTypes.REPORT_ERROR, { error });

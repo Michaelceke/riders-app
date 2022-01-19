@@ -1,9 +1,9 @@
-import { Reducer } from 'redux';
+import { Reducer } from "redux";
 import {
   AppNotificationState,
   AppNotificationAction,
   AppNotificationActionTypes,
-} from './types';
+} from "./types";
 
 const initialState: AppNotificationState = {
   loading: false,

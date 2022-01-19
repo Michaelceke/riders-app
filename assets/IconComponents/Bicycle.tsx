@@ -1,6 +1,6 @@
-import React from 'react';
-import { Icon, Center, NativeBaseProvider } from 'native-base';
-import { Path, G } from 'react-native-svg';
+import React from "react";
+import { Icon, Center, NativeBaseProvider } from "native-base";
+import { Path, G } from "react-native-svg";
 
 interface BicycleProps {
   fill: string;

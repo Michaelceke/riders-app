@@ -1,14 +1,14 @@
 /*eslint-disable */
 
 module.exports = {
-  presets: ['module:metro-react-native-babel-preset'],
+  presets: ["module:metro-react-native-babel-preset"],
   plugins: [
-    'react-native-reanimated/plugin',
+    "react-native-reanimated/plugin",
     [
-      'babel-plugin-root-import',
+      "babel-plugin-root-import",
       {
-        rootPathPrefix: '@src',
-        rootPathSuffix: 'src',
+        rootPathPrefix: "@src",
+        rootPathSuffix: "src",
       },
     ],
   ],

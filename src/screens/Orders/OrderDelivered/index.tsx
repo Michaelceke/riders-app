@@ -49,16 +49,15 @@ const OrderDelivered: React.FC<OrderDeliveredProps> = ({ item }) => {
         </Text>
         <Checkbox.Group
           onChange={setGroupValues}
-        //   onChange={(state) => {
-        //     if (state) {
-        //       setBg("#FF1B03");
-        //     } else {
-        //       setBg("#FF1B03");
-        //     }
-        //   }}
+          //   onChange={(state) => {
+          //     if (state) {
+          //       setBg("#FF1B03");
+          //     } else {
+          //       setBg("#FF1B03");
+          //     }
+          //   }}
           value={groupValues}
           accessibilityLabel="choose payment method"
-         
         >
           <Checkbox
             value="one"
@@ -69,7 +68,6 @@ const OrderDelivered: React.FC<OrderDeliveredProps> = ({ item }) => {
               fontSize: "15px",
               lineHeight: "19px",
             }}
-           
           >
             Cash
           </Checkbox>

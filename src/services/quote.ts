@@ -1,5 +1,5 @@
-import { quotesApi } from '@src/services';
-import { QuoteState } from '@src/stores/quote/types';
+import { quotesApi } from "@src/services";
+import { QuoteState } from "@src/stores/quote/types";
 
 export interface QuoteResponse {
   success: string;
@@ -9,5 +9,5 @@ export interface QuoteResponse {
 }
 
 export const fetchQuoteRequest = async () => {
-  return await quotesApi.get<QuoteResponse, {}>('/qod');
+  return await quotesApi.get<QuoteResponse, {}>("/qod");
 };

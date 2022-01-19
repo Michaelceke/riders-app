@@ -1,4 +1,4 @@
-export const xml= `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+export const xml = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
 <image style="overflow:visible;" width="2000" height="807" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB9AAAAMnCAYAAABm4MnLAAAgAElEQVR4nOzdeZfcZ3nv609JtmbL
 lucBzyMYDJ4wM5gZHJLsc85e54XkDZ0/z9l7J9kkJATCtJnDjCFMZg4GYxvb2HiQNdRZP/vpnUKW
@@ -1542,4 +1542,4 @@ IT+jUMcIKURGijX4On6Ne9dYA4NHRoUQQgghhBBCCCGEEKJd8YHxgguM16syj9t5FqL35luB3rWI
 IthaVFFu/CxflV5xwfZKVJleify5cXV51f3cuHrdV7GH4HwItucDM/t/byjVGYHH33AAAAAASUVO
 RK5CYII=" transform="matrix(0.3508 0 0 0.3508 70.1495 185.4462)">
 </image>
-</svg>`
+</svg>`;

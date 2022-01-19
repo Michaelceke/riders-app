@@ -3,9 +3,9 @@ export interface AppNotificationState {
 }
 
 export enum AppNotificationActionTypes {
-  REPORT_ERROR = 'REPORT_ERROR',
-  REPORT_MESSAGE = 'REPORT_MESSAGE',
-  SET_LOADING = 'SET_LOADING',
+  REPORT_ERROR = "REPORT_ERROR",
+  REPORT_MESSAGE = "REPORT_MESSAGE",
+  SET_LOADING = "SET_LOADING",
 }
 
 export interface ReportErrorAction {

@@ -1,1 +1,15 @@
-{"ast":null,"code":"var _interopRequireDefault = require(\"@babel/runtime/helpers/interopRequireDefault\");\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = rootSaga;\n\nvar _regenerator = _interopRequireDefault(require(\"@babel/runtime/regenerator\"));\n\nvar _effects = require(\"redux-saga/effects\");\n\nvar _appNotification = require(\"./appNotification\");\n\nvar _quote = require(\"./quote\");\n\nvar _marked = _regenerator.default.mark(rootSaga);\n\nfunction rootSaga() {\n  return _regenerator.default.wrap(function rootSaga$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.next = 2;\n          return (0, _effects.all)([(0, _effects.fork)(_appNotification.appNotificationSaga), (0, _effects.fork)(_quote.quoteSaga)]);\n\n        case 2:\n        case \"end\":\n          return _context.stop();\n      }\n    }\n  }, _marked);\n}","map":{"version":3,"sources":["C:/Users/a/projects/riders-app/src/stores/saga.ts"],"names":["rootSaga","appNotificationSaga","quoteSaga"],"mappings":";;;;;;;;;AAAA;;AACA;;AACA;;wCAEyBA,Q;;AAAV,SAAUA,QAAV;AAAA;AAAA;AAAA;AAAA;AAAA;AACb,iBAAM,kBAAI,CAAC,mBAAKC,oCAAL,CAAD,EAA4B,mBAAKC,gBAAL,CAA5B,CAAJ,CAAN;;AADa;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA","sourcesContent":["import { all, fork } from 'redux-saga/effects';\r\nimport { appNotificationSaga } from '@src/stores/appNotification';\r\nimport { quoteSaga } from '@src/stores/quote';\r\n\r\nexport default function* rootSaga() {\r\n  yield all([fork(appNotificationSaga), fork(quoteSaga)]);\r\n}\r\n"]},"metadata":{},"sourceType":"script"}
+{
+  "ast": null,
+  "code": "var _interopRequireDefault = require(\"@babel/runtime/helpers/interopRequireDefault\");\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = rootSaga;\n\nvar _regenerator = _interopRequireDefault(require(\"@babel/runtime/regenerator\"));\n\nvar _effects = require(\"redux-saga/effects\");\n\nvar _appNotification = require(\"./appNotification\");\n\nvar _quote = require(\"./quote\");\n\nvar _marked = _regenerator.default.mark(rootSaga);\n\nfunction rootSaga() {\n  return _regenerator.default.wrap(function rootSaga$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.next = 2;\n          return (0, _effects.all)([(0, _effects.fork)(_appNotification.appNotificationSaga), (0, _effects.fork)(_quote.quoteSaga)]);\n\n        case 2:\n        case \"end\":\n          return _context.stop();\n      }\n    }\n  }, _marked);\n}",
+  "map": {
+    "version": 3,
+    "sources": ["C:/Users/a/projects/riders-app/src/stores/saga.ts"],
+    "names": ["rootSaga", "appNotificationSaga", "quoteSaga"],
+    "mappings": ";;;;;;;;;AAAA;;AACA;;AACA;;wCAEyBA,Q;;AAAV,SAAUA,QAAV;AAAA;AAAA;AAAA;AAAA;AAAA;AACb,iBAAM,kBAAI,CAAC,mBAAKC,oCAAL,CAAD,EAA4B,mBAAKC,gBAAL,CAA5B,CAAJ,CAAN;;AADa;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA",
+    "sourcesContent": [
+      "import { all, fork } from 'redux-saga/effects';\r\nimport { appNotificationSaga } from '@src/stores/appNotification';\r\nimport { quoteSaga } from '@src/stores/quote';\r\n\r\nexport default function* rootSaga() {\r\n  yield all([fork(appNotificationSaga), fork(quoteSaga)]);\r\n}\r\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "script"
+}

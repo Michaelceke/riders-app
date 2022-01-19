@@ -1,12 +1,12 @@
-import { combineReducers, createStore, applyMiddleware, compose } from 'redux';
+import { combineReducers, createStore, applyMiddleware, compose } from "redux";
 import {
   useSelector as useReduxSelector,
   TypedUseSelectorHook,
-} from 'react-redux';
-import createSagaMiddleware from 'redux-saga';
-import { appNotification } from '@src/stores/appNotification';
-import { quote } from '@src/stores/quote';
-import saga from '@src/stores/saga';
+} from "react-redux";
+import createSagaMiddleware from "redux-saga";
+import { appNotification } from "@src/stores/appNotification";
+import { quote } from "@src/stores/quote";
+import saga from "@src/stores/saga";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -18,7 +18,7 @@ const rootReducer = combineReducers({
 const configureStore = () => {
   const store = createStore(
     rootReducer,
-    compose(applyMiddleware(sagaMiddleware)),
+    compose(applyMiddleware(sagaMiddleware))
   );
 
   sagaMiddleware.run(saga);

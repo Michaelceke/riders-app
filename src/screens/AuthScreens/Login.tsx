@@ -14,7 +14,6 @@ import {
 import SendMe from "../../../assets/sendmelogo.svg";
 import { Ionicons } from "@expo/vector-icons";
 
-
 const Login = () => {
   const [show, setShow] = React.useState(false);
   const handleShowPassword = () => setShow(!show);
@@ -98,9 +97,9 @@ const Login = () => {
                 h="full"
                 _icon={{
                   as: Ionicons,
-                  name: show?'eye-outline':'ios-eye-off-outline',
-                  color:'#8f92A1',
-                  size:'sm'
+                  name: show ? "eye-outline" : "ios-eye-off-outline",
+                  color: "#8f92A1",
+                  size: "sm",
                 }}
                 onPress={handleShowPassword}
               />

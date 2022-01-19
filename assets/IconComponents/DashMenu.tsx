@@ -1,6 +1,6 @@
-import React from 'react';
-import { Icon, Center, NativeBaseProvider } from 'native-base';
-import { Path, G, Line } from 'react-native-svg';
+import React from "react";
+import { Icon, Center, NativeBaseProvider } from "native-base";
+import { Path, G, Line } from "react-native-svg";
 
 interface DashMenuProps {
   fill: string;
@@ -41,4 +41,3 @@ export const DashMenu = ({ fill }: DashMenuProps) => {
     </Icon>
   );
 };
-

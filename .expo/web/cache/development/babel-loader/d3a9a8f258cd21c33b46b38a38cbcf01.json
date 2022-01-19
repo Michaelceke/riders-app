@@ -1,1 +1,22 @@
-{"ast":null,"code":"Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.fetchQuoteSuccess = exports.fetchQuote = void 0;\n\nvar _typesafeActions = require(\"typesafe-actions\");\n\nvar _types = require(\"./types\");\n\nvar fetchQuote = function fetchQuote() {\n  return (0, _typesafeActions.action)(_types.QuoteActionTypes.FETCH_QUOTES);\n};\n\nexports.fetchQuote = fetchQuote;\n\nvar fetchQuoteSuccess = function fetchQuoteSuccess(payload) {\n  return (0, _typesafeActions.action)(_types.QuoteActionTypes.FETCH_QUOTES_SUCCESS, payload);\n};\n\nexports.fetchQuoteSuccess = fetchQuoteSuccess;","map":{"version":3,"sources":["C:/Users/a/projects/riders-app/src/stores/quote/actions.ts"],"names":["fetchQuote","QuoteActionTypes","FETCH_QUOTES","fetchQuoteSuccess","payload","FETCH_QUOTES_SUCCESS"],"mappings":";;;;;AAAA;;AACA;;AAEO,IAAMA,UAAU,GAAG,SAAbA,UAAa;AAAA,SAAM,6BAAOC,wBAAiBC,YAAxB,CAAN;AAAA,CAAnB;;;;AAEA,IAAMC,iBAAiB,GAAG,SAApBA,iBAAoB,CAACC,OAAD,EAAyB;AACxD,SAAO,6BAAOH,wBAAiBI,oBAAxB,EAA8CD,OAA9C,CAAP;AACD,CAFM","sourcesContent":["import { action } from 'typesafe-actions';\r\nimport { QuoteActionTypes, QuoteState } from './types';\r\n\r\nexport const fetchQuote = () => action(QuoteActionTypes.FETCH_QUOTES);\r\n\r\nexport const fetchQuoteSuccess = (payload: QuoteState) => {\r\n  return action(QuoteActionTypes.FETCH_QUOTES_SUCCESS, payload);\r\n};\r\n"]},"metadata":{},"sourceType":"script"}
+{
+  "ast": null,
+  "code": "Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.fetchQuoteSuccess = exports.fetchQuote = void 0;\n\nvar _typesafeActions = require(\"typesafe-actions\");\n\nvar _types = require(\"./types\");\n\nvar fetchQuote = function fetchQuote() {\n  return (0, _typesafeActions.action)(_types.QuoteActionTypes.FETCH_QUOTES);\n};\n\nexports.fetchQuote = fetchQuote;\n\nvar fetchQuoteSuccess = function fetchQuoteSuccess(payload) {\n  return (0, _typesafeActions.action)(_types.QuoteActionTypes.FETCH_QUOTES_SUCCESS, payload);\n};\n\nexports.fetchQuoteSuccess = fetchQuoteSuccess;",
+  "map": {
+    "version": 3,
+    "sources": ["C:/Users/a/projects/riders-app/src/stores/quote/actions.ts"],
+    "names": [
+      "fetchQuote",
+      "QuoteActionTypes",
+      "FETCH_QUOTES",
+      "fetchQuoteSuccess",
+      "payload",
+      "FETCH_QUOTES_SUCCESS"
+    ],
+    "mappings": ";;;;;AAAA;;AACA;;AAEO,IAAMA,UAAU,GAAG,SAAbA,UAAa;AAAA,SAAM,6BAAOC,wBAAiBC,YAAxB,CAAN;AAAA,CAAnB;;;;AAEA,IAAMC,iBAAiB,GAAG,SAApBA,iBAAoB,CAACC,OAAD,EAAyB;AACxD,SAAO,6BAAOH,wBAAiBI,oBAAxB,EAA8CD,OAA9C,CAAP;AACD,CAFM",
+    "sourcesContent": [
+      "import { action } from 'typesafe-actions';\r\nimport { QuoteActionTypes, QuoteState } from './types';\r\n\r\nexport const fetchQuote = () => action(QuoteActionTypes.FETCH_QUOTES);\r\n\r\nexport const fetchQuoteSuccess = (payload: QuoteState) => {\r\n  return action(QuoteActionTypes.FETCH_QUOTES_SUCCESS, payload);\r\n};\r\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "script"
+}

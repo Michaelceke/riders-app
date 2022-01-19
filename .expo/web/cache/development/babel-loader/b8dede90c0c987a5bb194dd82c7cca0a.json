@@ -1,1 +1,28 @@
-{"ast":null,"code":"Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.setAppLoading = exports.alertMessage = exports.alertError = void 0;\n\nvar _typesafeActions = require(\"typesafe-actions\");\n\nvar _types = require(\"./types\");\n\nvar alertError = function alertError(error) {\n  return (0, _typesafeActions.action)(_types.AppNotificationActionTypes.REPORT_ERROR, {\n    error: error\n  });\n};\n\nexports.alertError = alertError;\n\nvar alertMessage = function alertMessage(message) {\n  return (0, _typesafeActions.action)(_types.AppNotificationActionTypes.REPORT_MESSAGE, {\n    message: message\n  });\n};\n\nexports.alertMessage = alertMessage;\n\nvar setAppLoading = function setAppLoading(loading) {\n  return (0, _typesafeActions.action)(_types.AppNotificationActionTypes.SET_LOADING, {\n    loading: loading\n  });\n};\n\nexports.setAppLoading = setAppLoading;","map":{"version":3,"sources":["C:/Users/a/projects/riders-app/src/stores/appNotification/actions.ts"],"names":["alertError","error","AppNotificationActionTypes","REPORT_ERROR","alertMessage","message","REPORT_MESSAGE","setAppLoading","loading","SET_LOADING"],"mappings":";;;;;AAAA;;AACA;;AAEO,IAAMA,UAAU,GAAG,SAAbA,UAAa,CAACC,KAAD,EAAmB;AAC3C,SAAO,6BAAOC,kCAA2BC,YAAlC,EAAgD;AAAEF,IAAAA,KAAK,EAALA;AAAF,GAAhD,CAAP;AACD,CAFM;;;;AAGA,IAAMG,YAAY,GAAG,SAAfA,YAAe,CAACC,OAAD,EAAqB;AAC/C,SAAO,6BAAOH,kCAA2BI,cAAlC,EAAkD;AAAED,IAAAA,OAAO,EAAPA;AAAF,GAAlD,CAAP;AACD,CAFM;;;;AAIA,IAAME,aAAa,GAAG,SAAhBA,aAAgB,CAACC,OAAD,EAAsB;AACjD,SAAO,6BAAON,kCAA2BO,WAAlC,EAA+C;AAAED,IAAAA,OAAO,EAAPA;AAAF,GAA/C,CAAP;AACD,CAFM","sourcesContent":["import { action } from 'typesafe-actions';\r\nimport { AppNotificationActionTypes } from './types';\r\n\r\nexport const alertError = (error: string) => {\r\n  return action(AppNotificationActionTypes.REPORT_ERROR, { error });\r\n};\r\nexport const alertMessage = (message: string) => {\r\n  return action(AppNotificationActionTypes.REPORT_MESSAGE, { message });\r\n};\r\n\r\nexport const setAppLoading = (loading: boolean) => {\r\n  return action(AppNotificationActionTypes.SET_LOADING, { loading });\r\n};\r\n"]},"metadata":{},"sourceType":"script"}
+{
+  "ast": null,
+  "code": "Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.setAppLoading = exports.alertMessage = exports.alertError = void 0;\n\nvar _typesafeActions = require(\"typesafe-actions\");\n\nvar _types = require(\"./types\");\n\nvar alertError = function alertError(error) {\n  return (0, _typesafeActions.action)(_types.AppNotificationActionTypes.REPORT_ERROR, {\n    error: error\n  });\n};\n\nexports.alertError = alertError;\n\nvar alertMessage = function alertMessage(message) {\n  return (0, _typesafeActions.action)(_types.AppNotificationActionTypes.REPORT_MESSAGE, {\n    message: message\n  });\n};\n\nexports.alertMessage = alertMessage;\n\nvar setAppLoading = function setAppLoading(loading) {\n  return (0, _typesafeActions.action)(_types.AppNotificationActionTypes.SET_LOADING, {\n    loading: loading\n  });\n};\n\nexports.setAppLoading = setAppLoading;",
+  "map": {
+    "version": 3,
+    "sources": [
+      "C:/Users/a/projects/riders-app/src/stores/appNotification/actions.ts"
+    ],
+    "names": [
+      "alertError",
+      "error",
+      "AppNotificationActionTypes",
+      "REPORT_ERROR",
+      "alertMessage",
+      "message",
+      "REPORT_MESSAGE",
+      "setAppLoading",
+      "loading",
+      "SET_LOADING"
+    ],
+    "mappings": ";;;;;AAAA;;AACA;;AAEO,IAAMA,UAAU,GAAG,SAAbA,UAAa,CAACC,KAAD,EAAmB;AAC3C,SAAO,6BAAOC,kCAA2BC,YAAlC,EAAgD;AAAEF,IAAAA,KAAK,EAALA;AAAF,GAAhD,CAAP;AACD,CAFM;;;;AAGA,IAAMG,YAAY,GAAG,SAAfA,YAAe,CAACC,OAAD,EAAqB;AAC/C,SAAO,6BAAOH,kCAA2BI,cAAlC,EAAkD;AAAED,IAAAA,OAAO,EAAPA;AAAF,GAAlD,CAAP;AACD,CAFM;;;;AAIA,IAAME,aAAa,GAAG,SAAhBA,aAAgB,CAACC,OAAD,EAAsB;AACjD,SAAO,6BAAON,kCAA2BO,WAAlC,EAA+C;AAAED,IAAAA,OAAO,EAAPA;AAAF,GAA/C,CAAP;AACD,CAFM",
+    "sourcesContent": [
+      "import { action } from 'typesafe-actions';\r\nimport { AppNotificationActionTypes } from './types';\r\n\r\nexport const alertError = (error: string) => {\r\n  return action(AppNotificationActionTypes.REPORT_ERROR, { error });\r\n};\r\nexport const alertMessage = (message: string) => {\r\n  return action(AppNotificationActionTypes.REPORT_MESSAGE, { message });\r\n};\r\n\r\nexport const setAppLoading = (loading: boolean) => {\r\n  return action(AppNotificationActionTypes.SET_LOADING, { loading });\r\n};\r\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "script"
+}
