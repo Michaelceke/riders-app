@@ -18,9 +18,11 @@ import Home from "@src/screens/Home";
 import DrawerContent from "@src/_shared/libs/DrawerContent";
 import { Text } from "native-base";
 const Drawer = createDrawerNavigator();
+
 const Home2 = () => {
-  return <Text>Heklooo</Text>;
+  return <Text>Hellooo mikel</Text>;
 };
+
 const RootNavigator = () => (
   <Drawer.Navigator
     drawerContent={(props) => <DrawerContent {...props} />}
