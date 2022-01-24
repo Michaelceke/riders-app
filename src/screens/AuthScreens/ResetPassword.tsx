@@ -9,13 +9,12 @@ import {
   Center,
   Input,
   IconButton,
-  Link,
 } from "native-base";
 
 import SendMe from "../../../assets/sendmelogo.svg";
 import { Ionicons } from "@expo/vector-icons";
 
-const Login = ({ navigation }) => {
+const Login = () => {
   const [show, setShow] = React.useState(false);
   const handleShowPassword = () => setShow(!show);
 
@@ -25,10 +24,10 @@ const Login = ({ navigation }) => {
         {/* <SendMe />  */}
         Logo isHere
       </Center>
-      <Box mt={16} px="5px">
+      <Box mt={16}>
         <HStack>
           <Text fontWeight="extrabold" fontSize="bx" color="col.default">
-            Log
+            Reset passw
           </Text>
           <VStack>
             <Text
@@ -37,14 +36,14 @@ const Login = ({ navigation }) => {
               fontSize="bx"
               color="col.default"
             >
-              In
+              ord
             </Text>
             <Divider borderRadius="4" thickness="5" bg="col.500" />
           </VStack>
         </HStack>
       </Box>
 
-      <VStack space={10} mt={12} mb={8}>
+      <VStack space={10} mt={12} mb={24}>
         <Box>
           <Text
             pl="2"
@@ -53,17 +52,33 @@ const Login = ({ navigation }) => {
             lineHeight="19px"
             color="col.greylight"
           >
-            Full Name
+            Create New password
           </Text>
+
           <Input
-            type="text"
+            type={show ? "text" : "password"}
             variant="underlined"
-            h={10}
+            h={8}
             px="2"
             fontSize="lg"
             fontWeight="semibold"
             lineHeight="23px"
             color="col.default"
+            InputRightElement={
+              <IconButton
+                size="xs"
+                rounded="none"
+                w="1/6"
+                h="full"
+                _icon={{
+                  as: Ionicons,
+                  name: show ? "eye-outline" : "ios-eye-off-outline",
+                  color: "#8f92A1",
+                  size: "sm",
+                }}
+                onPress={handleShowPassword}
+              />
+            }
           />
         </Box>
 
@@ -75,13 +90,13 @@ const Login = ({ navigation }) => {
             lineHeight="19px"
             color="col.greylight"
           >
-            Password
+            Confirm New Password
           </Text>
 
           <Input
             type={show ? "text" : "password"}
             variant="underlined"
-            h={10}
+            h={8}
             px="2"
             fontSize="lg"
             fontWeight="semibold"
@@ -105,19 +120,6 @@ const Login = ({ navigation }) => {
           />
         </Box>
       </VStack>
-
-      <Link
-        mb="70px"
-        _text={{
-          color: "col.headtext",
-          fontSize: "xs",
-          fontWeight: "medium",
-          lineHeight: "15.06px",
-        }}
-        onPress={() => navigation.navigate("Forgot Password")}
-      >
-        Forgot Password?
-      </Link>
       <Button
         bgColor={"col.500"}
         height="56px"
