@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactChild, ReactNode } from "react";
 import {
   Text,
   Link,
@@ -21,11 +21,19 @@ import NativeBaseIcon from "@src/components/NativeBaseIcon";
 
 import { DashMenu } from "@src/../assets/IconComponents/DashMenu";
 
+interface DrawerScreensLayoutprops {
+  children: ReactNode;
+  navigation: any;
+  handleIsOnline?: () => void;
+  headerText: string;
+}
+
 export const DrawerScreensLayout = ({
   children,
   navigation,
   handleIsOnline,
-}) => {
+  headerText,
+}: DrawerScreensLayoutprops) => {
   return (
     <Box flex={1} safeArea mx={3}>
       <VStack mb={6} space={1}>
@@ -40,7 +48,7 @@ export const DrawerScreensLayout = ({
             fontSize="27px"
             lineHeight="34px"
           >
-            Orders
+            {headerText}
           </Text>
           <Spacer />
           <VStack>

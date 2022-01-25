@@ -12,10 +12,12 @@ import {
   IconButton,
   useDisclose,
   Badge,
+  Link,
 } from "native-base";
 import { OrderDataType } from "@src/_shared/dummyData/orderData";
 import { RouteMarker } from "@src/../assets/IconComponents/RouteMarker";
 import { AntDesign } from "@expo/vector-icons";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
 
 interface OrderCardProps {
   type: "redflags" | "neworders";
@@ -23,6 +25,7 @@ interface OrderCardProps {
 }
 
 const OrderCard = ({ type, item }: OrderCardProps) => {
+  const navigation = useNavigation();
   return (
     <Box
       w="100%"
@@ -59,9 +62,13 @@ const OrderCard = ({ type, item }: OrderCardProps) => {
                 Address
               </Text>
               <Spacer />
-              <Text mr="4px" lineHeight="15px">
+              <Link
+                mr="4px"
+                lineHeight="15px"
+                onPress={() => navigation.navigate("view map")}
+              >
                 View in map
-              </Text>
+              </Link>
             </HStack>
 
             <Text

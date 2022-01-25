@@ -1,1 +1,30 @@
-{"ast":null,"code":"Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\nvar theme = {\n  vars: {\n    orange: \"#F89505\",\n    sky_blue: \"#6495ed\",\n    dark: \"#000000\",\n    black: \"#333333\",\n    black_alt: \"#4F4F4F\",\n    slate_grey: \"#828282\",\n    grey: \"#BDBDBD\",\n    grey_alt: \"#C4C4C4\",\n    white: \"#FFFFFF\",\n    white_alt: \"#F2F2F2\"\n  },\n  dimens: {\n    spacing: \"2px\"\n  }\n};\nvar _default = theme;\nexports.default = _default;","map":{"version":3,"sources":["C:/Users/a/projects/riders-app/src/utils/theme.ts"],"names":["theme","vars","orange","sky_blue","dark","black","black_alt","slate_grey","grey","grey_alt","white","white_alt","dimens","spacing"],"mappings":";;;;AAAA,IAAMA,KAAK,GAAG;AACZC,EAAAA,IAAI,EAAE;AACJC,IAAAA,MAAM,EAAE,SADJ;AAEJC,IAAAA,QAAQ,EAAE,SAFN;AAGJC,IAAAA,IAAI,EAAE,SAHF;AAIJC,IAAAA,KAAK,EAAE,SAJH;AAKJC,IAAAA,SAAS,EAAE,SALP;AAMJC,IAAAA,UAAU,EAAE,SANR;AAOJC,IAAAA,IAAI,EAAE,SAPF;AAQJC,IAAAA,QAAQ,EAAE,SARN;AASJC,IAAAA,KAAK,EAAE,SATH;AAUJC,IAAAA,SAAS,EAAE;AAVP,GADM;AAaZC,EAAAA,MAAM,EAAE;AACNC,IAAAA,OAAO,EAAE;AADH;AAbI,CAAd;eAkBeb,K","sourcesContent":["const theme = {\n  vars: {\n    orange: \"#F89505\",\n    sky_blue: \"#6495ed\",\n    dark: \"#000000\",\n    black: \"#333333\",\n    black_alt: \"#4F4F4F\",\n    slate_grey: \"#828282\",\n    grey: \"#BDBDBD\",\n    grey_alt: \"#C4C4C4\",\n    white: \"#FFFFFF\",\n    white_alt: \"#F2F2F2\",\n  },\n  dimens: {\n    spacing: \"2px\",\n  },\n};\n\nexport default theme;\n"]},"metadata":{},"sourceType":"script"}
+{
+  "ast": null,
+  "code": "Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\nvar theme = {\n  vars: {\n    orange: \"#F89505\",\n    sky_blue: \"#6495ed\",\n    dark: \"#000000\",\n    black: \"#333333\",\n    black_alt: \"#4F4F4F\",\n    slate_grey: \"#828282\",\n    grey: \"#BDBDBD\",\n    grey_alt: \"#C4C4C4\",\n    white: \"#FFFFFF\",\n    white_alt: \"#F2F2F2\"\n  },\n  dimens: {\n    spacing: \"2px\"\n  }\n};\nvar _default = theme;\nexports.default = _default;",
+  "map": {
+    "version": 3,
+    "sources": ["C:/Users/a/projects/riders-app/src/utils/theme.ts"],
+    "names": [
+      "theme",
+      "vars",
+      "orange",
+      "sky_blue",
+      "dark",
+      "black",
+      "black_alt",
+      "slate_grey",
+      "grey",
+      "grey_alt",
+      "white",
+      "white_alt",
+      "dimens",
+      "spacing"
+    ],
+    "mappings": ";;;;AAAA,IAAMA,KAAK,GAAG;AACZC,EAAAA,IAAI,EAAE;AACJC,IAAAA,MAAM,EAAE,SADJ;AAEJC,IAAAA,QAAQ,EAAE,SAFN;AAGJC,IAAAA,IAAI,EAAE,SAHF;AAIJC,IAAAA,KAAK,EAAE,SAJH;AAKJC,IAAAA,SAAS,EAAE,SALP;AAMJC,IAAAA,UAAU,EAAE,SANR;AAOJC,IAAAA,IAAI,EAAE,SAPF;AAQJC,IAAAA,QAAQ,EAAE,SARN;AASJC,IAAAA,KAAK,EAAE,SATH;AAUJC,IAAAA,SAAS,EAAE;AAVP,GADM;AAaZC,EAAAA,MAAM,EAAE;AACNC,IAAAA,OAAO,EAAE;AADH;AAbI,CAAd;eAkBeb,K",
+    "sourcesContent": [
+      "const theme = {\n  vars: {\n    orange: \"#F89505\",\n    sky_blue: \"#6495ed\",\n    dark: \"#000000\",\n    black: \"#333333\",\n    black_alt: \"#4F4F4F\",\n    slate_grey: \"#828282\",\n    grey: \"#BDBDBD\",\n    grey_alt: \"#C4C4C4\",\n    white: \"#FFFFFF\",\n    white_alt: \"#F2F2F2\",\n  },\n  dimens: {\n    spacing: \"2px\",\n  },\n};\n\nexport default theme;\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "script"
+}

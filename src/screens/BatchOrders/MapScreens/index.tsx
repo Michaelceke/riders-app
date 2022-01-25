@@ -12,7 +12,7 @@ import {
   Modal,
 } from "native-base";
 import { StyleSheet, Dimensions } from "react-native";
-import { Bicycle } from "../../../assets/IconComponents/Bicycle";
+import { Bicycle } from "../../../../assets/IconComponents/Bicycle";
 import MapFooter from "./MapFooter";
 import MapHeader from "./MapHeader";
 

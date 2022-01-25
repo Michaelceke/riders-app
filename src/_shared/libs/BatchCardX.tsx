@@ -9,12 +9,16 @@ import {
   Badge,
   Spacer,
   Link,
+  Center,
   Drawer,
   Divider,
   Button,
 } from "native-base";
 
 import OrderCard from "./OrderCard";
+import { OrdersBag } from "@src/../assets/IconComponents/OrdersBag";
+import { ArrowDownIcon } from "@src/../assets/IconComponents/ArrowDownIcon";
+
 interface BatchCardXProps {
   item: any;
 }
@@ -38,11 +42,10 @@ const BatchCardX: React.FC<BatchCardXProps> = ({ item }) => {
             <Text> 30s</Text>
           </HStack>
           <HStack space={10} alignContent="center">
-            <HStack>
-              <Icon alignSelf="center" />
+            <HStack alignItems={"center"}>
+              <OrdersBag fill="#FF0000" />
               <Text alignSelf="center"> 3 orders</Text>
             </HStack>
-
             <Button
               w="60%"
               alignSelf="flex-end"
@@ -56,7 +59,7 @@ const BatchCardX: React.FC<BatchCardXProps> = ({ item }) => {
         </VStack>
 
         <HStack>
-          <Icon />
+          <ArrowDownIcon fill="#FF0000" />
         </HStack>
       </Box>
       <Box w="94%" ml="1">

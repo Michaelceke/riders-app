@@ -15,7 +15,7 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
-import Home from "@src/screens/Home";
+import BatchHomeRoot from "./BatchOrders/BatchHomeRoot";
 import DrawerContent from "@src/_shared/libs/DrawerContent";
 import { Text, Box, VStack, Icon, Spacer, Button, HStack } from "native-base";
 
@@ -39,7 +39,7 @@ const DrawerNavigatorRoot = () => {
       }}
     >
       <>
-        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="BatchHomeRoot" component={BatchHomeRoot} />
         <Drawer.Screen name="In Progress" component={Home2} />
         <Drawer.Screen name="Order History" component={Home2} />
         <Drawer.Screen name="Rider" component={Home2} />

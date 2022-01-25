@@ -2,11 +2,11 @@ import React from "react";
 import { Icon, Center, NativeBaseProvider } from "native-base";
 import { Path, G } from "react-native-svg";
 
-interface OrdersbagProps {
+interface OrdersBagProps {
   fill: string;
 }
 
-export const OrdersBag = ({ fill }: OrdersbagProps) => {
+export const OrdersBag = ({ fill }: OrdersBagProps) => {
   return (
     <Icon width="22" height="22" viewBox="0 0 22 22">
       <G fillRule="nonzero" stroke="none" strokeWidth={1} fill="none">

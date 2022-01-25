@@ -1,1 +1,17 @@
-{"ast":null,"code":"Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.AppNotificationActionTypes = void 0;\nvar AppNotificationActionTypes;\nexports.AppNotificationActionTypes = AppNotificationActionTypes;\n\n(function (AppNotificationActionTypes) {\n  AppNotificationActionTypes[\"REPORT_ERROR\"] = \"REPORT_ERROR\";\n  AppNotificationActionTypes[\"REPORT_MESSAGE\"] = \"REPORT_MESSAGE\";\n  AppNotificationActionTypes[\"SET_LOADING\"] = \"SET_LOADING\";\n})(AppNotificationActionTypes || (exports.AppNotificationActionTypes = AppNotificationActionTypes = {}));","map":{"version":3,"sources":["C:/Users/a/projects/riders-app/src/stores/appNotification/types.ts"],"names":["AppNotificationActionTypes"],"mappings":";;;;IAIYA,0B;;;WAAAA,0B;AAAAA,EAAAA,0B;AAAAA,EAAAA,0B;AAAAA,EAAAA,0B;GAAAA,0B,0CAAAA,0B","sourcesContent":["export interface AppNotificationState {\n  loading: boolean;\n}\n\nexport enum AppNotificationActionTypes {\n  REPORT_ERROR = \"REPORT_ERROR\",\n  REPORT_MESSAGE = \"REPORT_MESSAGE\",\n  SET_LOADING = \"SET_LOADING\",\n}\n\nexport interface ReportErrorAction {\n  type: AppNotificationActionTypes.REPORT_ERROR;\n  payload: {\n    error: string;\n  };\n}\n\nexport interface ReportMessageAction {\n  type: AppNotificationActionTypes.REPORT_MESSAGE;\n  payload: {\n    message: string;\n  };\n}\n\nexport interface SetLoadingAction {\n  type: AppNotificationActionTypes.SET_LOADING;\n  payload: {\n    loading: boolean;\n  };\n}\n\nexport type AppNotificationAction = SetLoadingAction;\n"]},"metadata":{},"sourceType":"script"}
+{
+  "ast": null,
+  "code": "Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.AppNotificationActionTypes = void 0;\nvar AppNotificationActionTypes;\nexports.AppNotificationActionTypes = AppNotificationActionTypes;\n\n(function (AppNotificationActionTypes) {\n  AppNotificationActionTypes[\"REPORT_ERROR\"] = \"REPORT_ERROR\";\n  AppNotificationActionTypes[\"REPORT_MESSAGE\"] = \"REPORT_MESSAGE\";\n  AppNotificationActionTypes[\"SET_LOADING\"] = \"SET_LOADING\";\n})(AppNotificationActionTypes || (exports.AppNotificationActionTypes = AppNotificationActionTypes = {}));",
+  "map": {
+    "version": 3,
+    "sources": [
+      "C:/Users/a/projects/riders-app/src/stores/appNotification/types.ts"
+    ],
+    "names": ["AppNotificationActionTypes"],
+    "mappings": ";;;;IAIYA,0B;;;WAAAA,0B;AAAAA,EAAAA,0B;AAAAA,EAAAA,0B;AAAAA,EAAAA,0B;GAAAA,0B,0CAAAA,0B",
+    "sourcesContent": [
+      "export interface AppNotificationState {\n  loading: boolean;\n}\n\nexport enum AppNotificationActionTypes {\n  REPORT_ERROR = \"REPORT_ERROR\",\n  REPORT_MESSAGE = \"REPORT_MESSAGE\",\n  SET_LOADING = \"SET_LOADING\",\n}\n\nexport interface ReportErrorAction {\n  type: AppNotificationActionTypes.REPORT_ERROR;\n  payload: {\n    error: string;\n  };\n}\n\nexport interface ReportMessageAction {\n  type: AppNotificationActionTypes.REPORT_MESSAGE;\n  payload: {\n    message: string;\n  };\n}\n\nexport interface SetLoadingAction {\n  type: AppNotificationActionTypes.SET_LOADING;\n  payload: {\n    loading: boolean;\n  };\n}\n\nexport type AppNotificationAction = SetLoadingAction;\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "script"
+}
