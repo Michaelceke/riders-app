@@ -12,7 +12,7 @@ import {
 
 import SendMe from "../../../assets/sendmelogo.svg";
 
-const ForgotPassword = () => {
+const ForgotPassword = ({ navigation }) => {
   return (
     <Box w="100%" flex={1} backgroundColor="#F6F5F5" px="8" pt="60px">
       <Center mt={12}>
@@ -57,7 +57,7 @@ const ForgotPassword = () => {
           <Input
             type="text"
             variant="underlined"
-            h={8}
+            h={10}
             px="2"
             fontSize="lg"
             fontWeight="semibold"
@@ -75,6 +75,7 @@ const ForgotPassword = () => {
           fontSize: "lg",
           lineHeight: "22.59px",
         }}
+        onPress={() => navigation.navigate("Reset Password")}
       >
         Reset Password
       </Button>

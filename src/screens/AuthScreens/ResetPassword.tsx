@@ -30,12 +30,7 @@ const Login = () => {
             Reset passw
           </Text>
           <VStack>
-            <Text
-              pl="5px"
-              fontWeight="extrabold"
-              fontSize="bx"
-              color="col.default"
-            >
+            <Text fontWeight="extrabold" fontSize="bx" color="col.default">
               ord
             </Text>
             <Divider borderRadius="4" thickness="5" bg="col.500" />

@@ -14,7 +14,7 @@ import {
 import SendMe from "../../../assets/sendmelogo.svg";
 import { Ionicons } from "@expo/vector-icons";
 
-const SignUp = () => {
+const SignUp = ({ navigation }) => {
   const [show, setShow] = React.useState(false);
   const handleShowPassword = () => setShow(!show);
   return (
@@ -199,6 +199,7 @@ const SignUp = () => {
           fontSize: "lg",
           lineHeight: "22.59px",
         }}
+        onPress={() => navigation.navigate("Verification")}
       >
         Done & Confirm
       </Button>

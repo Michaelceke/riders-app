@@ -23,13 +23,16 @@ const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
 import Login from "../screens/AuthScreens/Login";
 import ForgotPassword from "../screens/AuthScreens/ForgotPassword";
+import ResetPassword from "../screens/AuthScreens/ResetPassword";
+import SignUp from "../screens/AuthScreens/SignUp";
+import Verification from "../screens/AuthScreens/Verification";
 
 const Home2 = () => {
   return <Text>Hellooo mikel</Text>;
 };
 
 const DrawerNavigatorRoot = () => {
-  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(true);
 
   return (
     <Drawer.Navigator
@@ -49,7 +52,11 @@ const DrawerNavigatorRoot = () => {
 };
 
 const RootNavigator = () => {
-  const [isLoggedIn, setIsLoggedIn] = React.useState(true);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+
+  const loginHandler = () => {
+    setIsLoggedIn(true);
+  };
 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -62,14 +69,27 @@ const RootNavigator = () => {
         </>
       ) : (
         <>
-          <Stack.Screen
-            name="Login"
-            component={Login}
-            options={{ animationEnabled: true }}
-          />
+          <Stack.Screen name="Login" options={{ animationEnabled: true }}>
+            {(props) => <Login {...props} loginHand={loginHandler} />}
+          </Stack.Screen>
           <Stack.Screen
             name="Forgot Password"
             component={ForgotPassword}
+            options={{ animationEnabled: true }}
+          />
+          <Stack.Screen
+            name="SignUp"
+            component={SignUp}
+            options={{ animationEnabled: true }}
+          />
+          <Stack.Screen
+            name="Reset Password"
+            component={ResetPassword}
+            options={{ animationEnabled: true }}
+          />
+          <Stack.Screen
+            name="Verification"
+            component={Verification}
             options={{ animationEnabled: true }}
           />
         </>
