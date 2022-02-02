@@ -125,7 +125,7 @@ const Login = () => {
           lineHeight: "22.59px",
         }}
       >
-        Log In
+        Reset Password
       </Button>
     </Box>
   );
