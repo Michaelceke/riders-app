@@ -18,7 +18,7 @@ const SignUp = ({ navigation }) => {
   const [show, setShow] = React.useState(false);
   const handleShowPassword = () => setShow(!show);
   return (
-    <Box w="100%" flex={1} backgroundColor="#F6F5F5" px="8" pt="10px">
+    <Box w="100%" flex={1} backgroundColor="#F6F5F5" px="8" pt="60px">
       <Center mt={10}>
         {/* <SendMe />  */}
         Logo isHere
