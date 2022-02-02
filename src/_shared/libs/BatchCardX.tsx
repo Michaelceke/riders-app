@@ -43,7 +43,7 @@ const BatchCardX: React.FC<BatchCardXProps> = ({ item }) => {
           </HStack>
           <HStack space={10} alignContent="center">
             <HStack alignItems={"center"}>
-              <OrdersBag fill="#FF0000" />
+              <OrdersBag fill="#596273" />
               <Text alignSelf="center"> 3 orders</Text>
             </HStack>
             <Button
@@ -58,8 +58,8 @@ const BatchCardX: React.FC<BatchCardXProps> = ({ item }) => {
           </HStack>
         </VStack>
 
-        <HStack>
-          <ArrowDownIcon fill="#FF0000" />
+        <HStack mb="2">
+          <ArrowDownIcon fill="#596273" />
         </HStack>
       </Box>
       <Box w="94%" ml="1">

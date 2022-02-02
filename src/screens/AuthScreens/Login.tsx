@@ -15,7 +15,11 @@ import {
 import SendMe from "../../../assets/sendmelogo.svg";
 import { Ionicons } from "@expo/vector-icons";
 
-const Login = ({ navigation }) => {
+interface LoginProps {
+  loginHand: () => void;
+}
+
+const Login = React.memo(({ navigation, loginHand }: LoginProps) => {
   const [show, setShow] = React.useState(false);
   const handleShowPassword = () => setShow(!show);
 
@@ -107,7 +111,7 @@ const Login = ({ navigation }) => {
       </VStack>
 
       <Link
-        mb="70px"
+        mb="5px"
         _text={{
           color: "col.headtext",
           fontSize: "xs",
@@ -118,6 +122,18 @@ const Login = ({ navigation }) => {
       >
         Forgot Password?
       </Link>
+      <Link
+        mb="70px"
+        _text={{
+          color: "col.headtext",
+          fontSize: "xs",
+          fontWeight: "medium",
+          lineHeight: "15.06px",
+        }}
+        onPress={() => navigation.navigate("SignUp")}
+      >
+        SignUp?
+      </Link>
       <Button
         bgColor={"col.500"}
         height="56px"
@@ -127,11 +143,12 @@ const Login = ({ navigation }) => {
           fontSize: "lg",
           lineHeight: "22.59px",
         }}
+        onPress={() => loginHand()}
       >
         Log In
       </Button>
     </Box>
   );
-};
+});
 
 export default Login;

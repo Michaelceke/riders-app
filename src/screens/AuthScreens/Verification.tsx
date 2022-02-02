@@ -56,7 +56,7 @@ const Verification = () => {
           <Input
             type="text"
             variant="underlined"
-            h={8}
+            h={10}
             px="2"
             fontSize="lg"
             fontWeight="semibold"
